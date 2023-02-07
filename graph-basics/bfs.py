@@ -56,6 +56,8 @@ def findPath(destination):
 def main():
     bfs("A")
     print(bfs_traversal_output)    
+    path = findPath('E')
+    print(path)
 
 
 if __name__ == "__main__":
