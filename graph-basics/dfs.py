@@ -9,8 +9,6 @@ graph = {
     'H' : ['G', 'F'],
 }
 
-
-
 def dfs(source):
     distance = {}
     visited = {}
