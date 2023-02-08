@@ -29,7 +29,6 @@ def bfs(source):
     distance[source] = 0
     parent[source] = None
     q.put(source)
-    
     while not q.empty():
         node = q.get()
         bfs_traversal_output.append(node)
