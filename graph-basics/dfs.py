@@ -29,7 +29,6 @@ def dfs(source):
         dfs_output.append(node)
         for child in graph[node]:
             if not visited[child]:
-                # print(graph[node], child)
                 visited[child] = True
                 distance[child] = distance[node] + 1
                 parent[child] = node
