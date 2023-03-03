@@ -41,7 +41,6 @@ def ids(source, goal, depthLimit):
     parent[source] = None
     currentDepth = 0
     while len(stack) != 0:
-        
         node = stack.pop()
         dfs_output.append(node)
         
@@ -55,9 +54,6 @@ def ids(source, goal, depthLimit):
                     depth[child] = depth[node] + 1
                     parent[child] = node
                     stack.append(child)
-        
-
-    
     return -1
 
 
