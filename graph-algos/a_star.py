@@ -42,7 +42,7 @@ def AStarSearch():
             if cost[check_node] + childrenCosts[children_nodes.index(traceNode)] == cost[traceNode]:
                 optimalSequence.append(check_node)
                 traceNode = check_node
-    optimalSequence.reverse()              # reverse the optimal sequence
+    optimalSequence.reverse()            
 
     return searchedPath, optimalSequence
 
