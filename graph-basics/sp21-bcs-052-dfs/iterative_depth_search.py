@@ -53,13 +53,12 @@ def ids(source, goal, depthLimit):
                 if not visited[child]:
                     visited[child] = True
                     depth[child] = depth[node] + 1
-                    parent[child] = node
                     stack.append(child)
     return -1
 
 
 def main():
-    for i in range(100):
+    for i in range(1000):
         depth = ids('A', 'X', i)
         if depth != -1:
             print(depth)
