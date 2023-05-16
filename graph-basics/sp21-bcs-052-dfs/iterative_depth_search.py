@@ -40,6 +40,7 @@ def ids(source, goal, depthLimit):
     distance[source] = 0
     parent[source] = None
     currentDepth = 0
+    
     while len(stack) != 0:
         node = stack.pop()
         dfs_output.append(node)
